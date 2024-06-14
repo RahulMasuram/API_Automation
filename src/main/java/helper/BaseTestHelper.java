@@ -24,4 +24,10 @@ public class BaseTestHelper {
         String Timestamp = now.toString().replace(":", "-");
         return Timestamp;
     }
+
+    //creating an display method
+    public static void display(String message)
+    {
+        System.out.println(message);
+    }
 }
