@@ -194,7 +194,7 @@ public class postUsers {
         System.out.println("validatePutWithJsonFile executed successfully");
         System.out.println(response.getBody().asString());
     }
-    @Test
+    @Test(description="validating the Patch request with pojo")
     public void validatePatchWithPojo() throws IOException {
         postRequestBody patchRequest = new postRequestBody();
         patchRequest.setJob("morpheus");
