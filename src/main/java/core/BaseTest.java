@@ -21,8 +21,8 @@ public class BaseTest {
         ExtentReport.initialize(subfolderpath + "/" + "API_Execution_Automation.html");
     }
 
+    //This method will run after each @Test method completes it execution.
     @AfterMethod(alwaysRun = true)
-
     public void getResult(ITestResult result) {
 
         if (result.getStatus() == ITestResult.SUCCESS) {
